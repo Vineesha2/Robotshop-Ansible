@@ -1,6 +1,6 @@
 - name: variable demo
   hosts: localhost
-  Connection: local
+  connection: local
   vars:
     a: 100
     b: 200
