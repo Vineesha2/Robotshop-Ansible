@@ -10,6 +10,6 @@
   hosts: localhost
   connection: local
   tasks:
-    - name: ping
-      ansible.builtin.debug:
+    - name: uptime
+      ansible.builtin.shell: uptime
       register: out
