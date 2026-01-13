@@ -1,0 +1,10 @@
+- name: Template Demo
+  hosts: localhost
+  connection: local
+  vars:
+    name: Vineesha
+  tasks:
+    - name: Copy a file
+      ansible.builtin.template:
+        src: sample1.txt
+        dest: /tmp/sample1.txt
