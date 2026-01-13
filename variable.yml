@@ -8,3 +8,9 @@
       ansible.builtin.debug:
         msg: a value is {{ a }}
 
+    - name: print b variable
+      vars:
+        b: 200
+      ansible.builtin.debug:
+        msg: b value is {{ b }}
+
