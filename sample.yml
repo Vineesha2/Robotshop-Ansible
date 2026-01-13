@@ -10,6 +10,6 @@
   hosts: localhost
   connection: local
   tasks:
-    - name: debug
+    - name: ping
       ansible.builtin.debug:
       register: out
