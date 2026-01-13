@@ -5,3 +5,10 @@
     - name: ping
       ansible.builtin.ping:
       register: out
+
+- name: Register Output
+  hosts: all
+  tasks:
+    - name: debug
+      ansible.builtin.debug:
+      register: out
