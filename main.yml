@@ -1,0 +1,6 @@
+- name: Robotshop-Ansible
+  hosts: localhost
+  connection: local
+  become: true
+  roles:
+    - "{{ role_name }}"
