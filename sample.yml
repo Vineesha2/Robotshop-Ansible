@@ -6,10 +6,6 @@
       ansible.builtin.ping:
       register: out
 
-- name: Register Output
-  hosts: localhost
-  connection: local
-  tasks:
     - name: uptime
       ansible.builtin.shell: uptime
       register: out
